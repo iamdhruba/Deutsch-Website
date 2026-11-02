@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36" fill="none">
+  <!-- 4 vertical rounded rectangles side-by-side with 3px border radius and German flag colors -->
+  <rect x="2" y="3" width="6.5" height="30" rx="3" ry="3" fill="#18181b" />
+  <rect x="10.5" y="3" width="6.5" height="30" rx="3" ry="3" fill="#dc2626" />
+  <rect x="19" y="3" width="6.5" height="30" rx="3" ry="3" fill="#f59e0b" />
+  <rect x="27.5" y="3" width="6.5" height="30" rx="3" ry="3" fill="#b91c1c" />
+</svg>

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  html {
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body, #root {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Clean Minimal UI: 3px border radius across all UI elements */
+  *, ::before, ::after {
+    border-radius: 3px !important;
+  }
+
+  /* Full-bleed layout containers stay flush with screen edges */
+  html, body, #root, .min-h-screen, main, aside, nav, header, footer {
+    border-radius: 0 !important;
+  }
+
+  /* Dyslexia-friendly accessibility mode */
+  body.font-dyslexia {
+    font-family: 'OpenDyslexic', 'Comic Sans MS', sans-serif !important;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+    line-height: 1.8;
+  }
+
+  /* Font size scales */
+  body.text-scale-sm { font-size: 0.9rem; }
+  body.text-scale-base { font-size: 1rem; }
+  body.text-scale-lg { font-size: 1.125rem; }
+  body.text-scale-xl { font-size: 1.25rem; }
+}
+
+/* German Gender Color Badge Classes */
+.badge-der {
+  @apply bg-blue-50 text-blue-700 border border-blue-200 dark:bg-blue-950/50 dark:text-blue-300 dark:border-blue-800;
+}
+.badge-die {
+  @apply bg-red-50 text-red-700 border border-red-200 dark:bg-red-950/50 dark:text-red-300 dark:border-red-800;
+}
+.badge-das {
+  @apply bg-emerald-50 text-emerald-700 border border-emerald-200 dark:bg-emerald-950/50 dark:text-emerald-300 dark:border-emerald-800;
+}
+.badge-plural {
+  @apply bg-purple-50 text-purple-700 border border-purple-200 dark:bg-purple-950/50 dark:text-purple-300 dark:border-purple-800;
+}
+
+/* CEFR Level Badges */
+.badge-a1 { @apply bg-teal-50 text-teal-700 border border-teal-200 dark:bg-teal-950/50 dark:text-teal-300 dark:border-teal-800; }
+.badge-a2 { @apply bg-cyan-50 text-cyan-700 border border-cyan-200 dark:bg-cyan-950/50 dark:text-cyan-300 dark:border-cyan-800; }
+.badge-b1 { @apply bg-indigo-50 text-indigo-700 border border-indigo-200 dark:bg-indigo-950/50 dark:text-indigo-300 dark:border-indigo-800; }
+.badge-b2 { @apply bg-violet-50 text-violet-700 border border-violet-200 dark:bg-violet-950/50 dark:text-violet-300 dark:border-violet-800; }
+.badge-c1 { @apply bg-amber-50 text-amber-700 border border-amber-200 dark:bg-amber-950/50 dark:text-amber-300 dark:border-amber-800; }
+.badge-c2 { @apply bg-rose-50 text-rose-700 border border-rose-200 dark:bg-rose-950/50 dark:text-rose-300 dark:border-rose-800; }
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 3px !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.7);
+}
+
+/* Markdown Content Tables and Headings */
+.markdown-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.8125rem;
+  border-radius: 3px !important;
+  overflow: hidden;
+}
+.markdown-content th {
+  background-color: rgba(241, 245, 249, 0.9);
+  padding: 0.625rem 0.75rem;
+  text-align: left;
+  font-weight: 700;
+  border: 1px solid #e2e8f0;
+}
+.dark .markdown-content th {
+  background-color: rgba(30, 41, 59, 0.8);
+  border-color: #334155;
+}
+.markdown-content td {
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #e2e8f0;
+}
+.dark .markdown-content td {
+  border-color: #334155;
+}
+.markdown-content tr:nth-child(even) {
+  background-color: rgba(248, 250, 252, 0.6);
+}
+.dark .markdown-content tr:nth-child(even) {
+  background-color: rgba(15, 23, 42, 0.4);
+}
+.markdown-content h1, .markdown-content h2, .markdown-content h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+}
+.dark .markdown-content h1, .dark .markdown-content h2, .dark .markdown-content h3 {
+  color: #f8fafc;
+}
+.markdown-content h1 { font-size: 1.35rem; }
+.markdown-content h2 { font-size: 1.15rem; }
+.markdown-content h3 { font-size: 1rem; }
+.markdown-content p {
+  margin-bottom: 0.875rem;
+  line-height: 1.6;
+}
+.markdown-content ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Interactive Sentence and Word Floating Tooltips */
+.sentence-hover-wrap {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.sentence-tooltip-bubble {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  align-items: center;
+  z-index: 30;
+  pointer-events: none;
+  animation: tooltipFadeIn 0.15s ease-out;
+}
+
+.sentence-hover-wrap:hover > .sentence-tooltip-bubble,
+.sentence-hover-wrap.sentence-hovered > .sentence-tooltip-bubble {
+  display: flex;
+}
+
+.word-hover-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.word-tooltip-bubble {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  align-items: center;
+  z-index: 40;
+  pointer-events: none;
+  animation: tooltipFadeIn 0.15s ease-out;
+}
+
+.word-hover-wrap:hover > .word-tooltip-bubble,
+.word-hover-wrap.word-hovered > .word-tooltip-bubble {
+  display: flex;
+}
+
+/* When hovering specifically over a word, prioritize word tooltip over sentence tooltip */
+.sentence-hover-wrap:has(.word-hover-wrap:hover) > .sentence-tooltip-bubble,
+.sentence-hover-wrap:has(.word-hover-wrap.word-hovered) > .sentence-tooltip-bubble {
+  display: none !important;
+}
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 4px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+
+/* Lernen Vocabulary Popover (Matching Reference Screenshot Design) */
+.vocabeo-word-wrap {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.vocabeo-word-wrap:hover,
+.vocabeo-word-wrap.is-hovered {
+  z-index: 60;
+}
+
+.vocabeo-popover {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 50;
+  pointer-events: auto;
+  animation: popoverFadeIn 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+  border-radius: 6px !important;
+}
+
+.vocabeo-popover > :first-child {
+  border-top-left-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+}
+
+.vocabeo-popover > :last-child {
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+/* Invisible bridge so moving cursor from word to popover maintains hover */
+.vocabeo-popover::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: -12px;
+  right: -12px;
+  height: 12px;
+}
+
+.vocabeo-word-wrap:hover > .vocabeo-popover,
+.vocabeo-word-wrap.is-hovered > .vocabeo-popover {
+  display: flex;
+}
+
+@keyframes popoverFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 4px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+
+
+

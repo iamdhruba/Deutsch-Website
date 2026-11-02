@@ -1,0 +1,62 @@
+{
+  "platform": "Lernen",
+  "statement": "Lernen is 100% free for everyone forever. No subscriptions, no payments, no paywalls, no advertising, and no closed-source APIs. Built entirely on free and open-source software, datasets, and community contributions.",
+  "dataSources": [
+    {
+      "name": "Kaikki.org / Wiktionary",
+      "url": "https://kaikki.org/dictionary/German/index.html",
+      "license": "Creative Commons Attribution-ShareAlike 3.0 / 4.0 Unported (CC BY-SA)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "usage": "Headwords, grammatical inflection tables (declension & conjugation), definitions, genders, and parts of speech.",
+      "attribution": "Derived from German Wiktionary dumps parsed by Kaikki.org. Contributors to Wiktionary (Wiktionary.org)."
+    },
+    {
+      "name": "Tatoeba Project",
+      "url": "https://tatoeba.org",
+      "license": "Creative Commons Attribution 2.0 France (CC BY 2.0 FR)",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/fr/",
+      "usage": "Bilingual example sentences illustrating vocabulary in authentic contexts.",
+      "attribution": "Sentence data courtesy of the Tatoeba Project and its open community of volunteer contributors."
+    },
+    {
+      "name": "SUBTLEX-DE & Leipzig Corpora",
+      "url": "https://wortschatz.uni-leipzig.de/",
+      "license": "Creative Commons Attribution-NonCommercial (CC BY-NC) / Open Academic Data",
+      "licenseUrl": "https://wortschatz.uni-leipzig.de/de/download",
+      "usage": "Frequency counts, frequency bands, and CEFR-mapped frequency wordlists.",
+      "attribution": "Brysbaert et al. (SUBTLEX-DE) and University of Leipzig Corpora Collection."
+    },
+    {
+      "name": "OpenThesaurus",
+      "url": "https://www.openthesaurus.de",
+      "license": "GNU Lesser General Public License (LGPL) / CC BY-SA 4.0",
+      "licenseUrl": "https://www.openthesaurus.de/about/download",
+      "usage": "German synonym clusters, collocations, and associated terms.",
+      "attribution": "OpenThesaurus community project (Daniel Naber and contributors)."
+    },
+    {
+      "name": "Mozilla Common Voice & Wikimedia Commons",
+      "url": "https://commonvoice.mozilla.org",
+      "license": "Creative Commons Zero (CC0) / CC BY-SA",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "usage": "Spoken German audio recordings and pronunciation samples.",
+      "attribution": "Mozilla Foundation Common Voice Project & Wikimedia Commons contributors."
+    },
+    {
+      "name": "FSRS (Free Spaced Repetition Scheduler)",
+      "url": "https://github.com/open-spaced-repetition/fsrs4anki",
+      "license": "MIT License",
+      "licenseUrl": "https://opensource.org/licenses/MIT",
+      "usage": "State-of-the-art memory retention algorithm powering the vocabulary review queue.",
+      "attribution": "Jarrett Ye and Open Spaced Repetition team."
+    },
+    {
+      "name": "OpenDyslexic Font",
+      "url": "https://opendyslexic.org/",
+      "license": "SIL Open Font License (OFL)",
+      "licenseUrl": "https://scripts.sil.org/OFL",
+      "usage": "Dyslexia-friendly reading font option in accessibility settings.",
+      "attribution": "Abbie Gonzalez (OpenDyslexic)."
+    }
+  ]
+}
